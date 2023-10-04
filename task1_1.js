@@ -5,8 +5,10 @@
 
 'use strict';
 
-for (let int = 1; int <= 99; i++) {
-    if (int % 3 === 0) {
+for (let int = 1; int <= 99; int++) {
+    if ((int % 3 === 0) && (int % 5 === 0)) {
+        console.log('FizzBuzz ' + int);
+    } else if (int % 3 === 0) {
         console.log('Fizz ' + int);
     } else if (int % 5 === 0) {
         console.log('Buzz ' + int);
